@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="32" fill="#019934"/>
+<path d="M34.6665 24.2666V29.3333C30.9465 29.4 29.3998 30.9466 29.3332 34.6666H24.2665C20.2665 34.6666 18.6665 33.0667 18.6665 29.0667V24.2666C18.6665 20.2666 20.2665 18.6666 24.2665 18.6666H29.0665C33.0665 18.6666 34.6665 20.2666 34.6665 24.2666Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25.2798 23.8266C24.5731 23.3466 23.6398 23.3466 22.9331 23.8533" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30.6133 23.8266C29.9066 23.3466 28.9733 23.3466 28.2666 23.8533" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26.8802 31.2267H23.7869C23.3869 31.2267 23.0669 30.9067 23.0669 30.5067C23.0669 28.52 24.6802 26.9067 26.6669 26.9067C27.5202 26.9067 28.3069 27.2 28.9202 27.6934" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M45.3335 34.9333V39.7334C45.3335 43.7334 43.7335 45.3334 39.7335 45.3334H34.9335C30.9335 45.3334 29.3335 43.7334 29.3335 39.7334V34.6667C29.4002 30.9467 30.9468 29.4 34.6668 29.3334H39.7335C43.7335 29.3334 45.3335 30.9333 45.3335 34.9333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M35.9468 34.16C35.2401 34.64 34.3068 34.64 33.6001 34.1333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M41.2798 34.16C40.5731 34.64 39.6398 34.64 38.9331 34.1333" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.4534 37.5734H40.2134C40.6134 37.5734 40.9334 37.8933 40.9334 38.2933C40.9334 40.2799 39.3201 41.8934 37.3334 41.8934C35.3467 41.8934 33.7334 40.2799 33.7334 38.2933C33.7334 37.8933 34.0534 37.5734 34.4534 37.5734Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

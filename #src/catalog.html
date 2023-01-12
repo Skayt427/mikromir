@@ -1,0 +1,426 @@
+@@include('include_html/header.html')
+
+<section class="catalog-banner" style="background-image: url('img/catalog-banner.jpg');">
+  <div class="container catalog-banner__wrapper">
+    <div class="catalog-banner__box">
+      <h2 class="catalog-banner__title">Детские площадки</h2>
+      <div class="catalog-banner__counter">34</div>
+    </div>
+    <div class="breadcrumbs catalog-banner__breadcrumbs">
+      <a href="#" class="breadcrumbs__item">Главная</a>
+      <a href="#" class="breadcrumbs__item">Каталог</a>
+      <span class="breadcrumbs__item">Электроника Челябинск</span>
+    </div>
+  </div>
+</section>
+
+<section class="container catalog">
+  <aside class="aside">
+    <h3 class="aside__title">Каталог</h3>
+    <ul class="categories">
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Детские площадки
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Тематические игровые площадки
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Альпинисткое сооружение
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Игровой домик
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Динамичные устройства
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="#" class="categories__link">
+          Игра с песком
+          <div class="categories__arrow">
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 4.26795C10.3333 5.03775 10.3333 6.96225 9 7.73205L3 11.1962C1.66667 11.966 1.55068e-07 11.0037 1.36708e-07 9.4641L5.409e-08 2.5359C3.57305e-08 0.996296 1.66667 0.0340475 3 0.803848L9 4.26795Z" fill="#D9D9D9" />
+            </svg>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="catalog-main">
+    <div class="catalog__head">
+      <div class="select-head"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          VirtualSelect.init({
+            ele: '.select-head',
+            options: [
+              { label: 'По популярности (возрастание)', value: '' },
+              { label: 'По популярности (убывание)', value: '' },
+            ],
+            placeholder: 'По популярности',
+            hideClearButton: true,
+          });
+        });
+      </script>
+
+      <div class="type">
+        <button type="button" class="type__item active">
+          <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8.74229e-08H32V2H0V8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M0 12H32V14H0V12Z" fill="#9E9D9D" />
+            <path d="M2 8.74229e-08L2 14H0V8.74229e-08H2Z" fill="#9E9D9D" />
+            <path d="M32 8.74229e-08V14H30V0L32 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M22 8.74229e-08V14H20V0L22 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M12 8.74229e-08L12 14H10L10 0L12 8.74229e-08Z" fill="#9E9D9D" />
+          </svg>
+        </button>
+        <button type="button" class="type__item">
+          <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 8.74229e-08H32V2H0V8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M0 12H32V14H0V12Z" fill="#9E9D9D" />
+            <path d="M2 8.74229e-08L2 14H0V8.74229e-08H2Z" fill="#9E9D9D" />
+            <path d="M32 8.74229e-08V14H30V0L32 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M14 8.74229e-08L14 14H12L12 0L14 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M26 8.74229e-08V14H24V0L26 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M8 8.74229e-08L8 14H6L6 0L8 8.74229e-08Z" fill="#9E9D9D" />
+            <path d="M20 8.74229e-08V14H18V0L20 8.74229e-08Z" fill="#9E9D9D" />
+          </svg>
+        </button>
+        <div class="type__separator"></div>
+        <button type="button" class="type__item">
+          <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H9V2H0V0Z" fill="#9E9D9D" />
+            <path d="M11 0H21V2H11V0Z" fill="#9E9D9D" />
+            <path d="M23 0H32V2H23V0Z" fill="#9E9D9D" />
+            <path d="M0 6H9V8H0V6Z" fill="#9E9D9D" />
+            <path d="M11 6H21V8H11V6Z" fill="#9E9D9D" />
+            <path d="M23 6H32V8H23V6Z" fill="#9E9D9D" />
+            <path d="M0 12H9V14H0V12Z" fill="#9E9D9D" />
+            <path d="M11 12H21V14H11V12Z" fill="#9E9D9D" />
+            <path d="M23 12H32V14H23V12Z" fill="#9E9D9D" />
+          </svg>
+        </button>
+        <button type="button" class="type__item">
+          <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H9V2H0V0Z" fill="#9E9D9D" />
+            <path d="M11 0H32V2H11V0Z" fill="#9E9D9D" />
+            <path d="M0 6H9V8H0V6Z" fill="#9E9D9D" />
+            <path d="M11 6H32V8H11V6Z" fill="#9E9D9D" />
+            <path d="M0 12H9V14H0V12Z" fill="#9E9D9D" />
+            <path d="M11 12H32V14H11V12Z" fill="#9E9D9D" />
+          </svg>
+        </button>
+        <button type="button" class="type__item">
+          <svg width="32" height="14" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H9V2H0V0Z" fill="#9E9D9D" />
+            <path d="M11 0H32V2H11V0Z" fill="#9E9D9D" />
+            <path d="M0 4H9V6H0V4Z" fill="#9E9D9D" />
+            <path d="M0 8H9V10H0V8Z" fill="#9E9D9D" />
+            <path d="M11 4H32V6H11V4Z" fill="#9E9D9D" />
+            <path d="M11 8H32V10H11V8Z" fill="#9E9D9D" />
+            <path d="M0 12H9V14H0V12Z" fill="#9E9D9D" />
+            <path d="M11 12H32V14H11V12Z" fill="#9E9D9D" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="catalog__filters">
+      <div class="filter" id="filter-1"></div>
+      <div class="filter" id="filter-2"></div>
+      <div class="filter" id="filter-3"></div>
+      <div class="filter" id="filter-4"></div>
+      <div class="filter" id="filter-5"></div>
+      <div class="filter" id="filter-6"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          VirtualSelect.init({
+            ele: '#filter-1',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Цена',
+            hideClearButton: true,
+          });
+          VirtualSelect.init({
+            ele: '#filter-2',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Модельная линия',
+            hideClearButton: true,
+          });
+          VirtualSelect.init({
+            ele: '#filter-3',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Материал',
+            hideClearButton: true,
+          });
+          VirtualSelect.init({
+            ele: '#filter-4',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Цветовая схема',
+            hideClearButton: true,
+          });
+          VirtualSelect.init({
+            ele: '#filter-5',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Способ монтажа',
+            hideClearButton: true,
+          });
+          VirtualSelect.init({
+            ele: '#filter-6',
+            options: [
+              { label: 'Опция 1', value: '' },
+              { label: 'Опция 2', value: '' },
+            ],
+            placeholder: 'Размеры',
+            hideClearButton: true,
+          });
+        });
+      </script>
+    </div>
+
+    <!-- Доп класс для изменения вида каталога type-2 -->
+    <div class="catalog__list">
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-1.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-2.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-3.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-4.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-5.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-1.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-6.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-7.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-8.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-9.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-10.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <img src="img/card-11.jpg" alt="" class="card__img">
+          <button type="button" class="card__tofav">
+            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.62 18.8101C11.28 18.9301 10.72 18.9301 10.38 18.8101C7.48 17.8201 1 13.6901 1 6.6901C1 3.6001 3.49 1.1001 6.56 1.1001C8.38 1.1001 9.99 1.9801 11 3.3401C12.01 1.9801 13.63 1.1001 15.44 1.1001C18.51 1.1001 21 3.6001 21 6.6901C21 13.6901 14.52 17.8201 11.62 18.8101Z" stroke="#9E9D9D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <div class="card__bottom">
+          <a href="product.html" class="card__name">Горка</a>
+          <div class="card__article">BC01.000.S</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <button type="button" class="pagination__arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.56982 5.92999L3.49982 12L9.56982 18.07" stroke="#FEFEFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M20.5 12H3.67" stroke="#FEFEFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button type="button" class="pagination__btn">1</button>
+      <button type="button" class="pagination__btn">2</button>
+      <button type="button" class="pagination__btn">3</button>
+      <button type="button" class="pagination__btn">65</button>
+      <button type="button" class="pagination__arrow">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.4302 5.92999L20.5002 12L14.4302 18.07" stroke="#FEFEFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M3.5 12H20.33" stroke="#FEFEFE" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+@@include('include_html/footer.html')
